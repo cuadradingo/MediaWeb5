@@ -1,0 +1,394 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "open-sans", sans-serif;
+}
+
+body{
+    background: rgb(241, 237, 223);
+}
+
+.header{
+    background-color: transparent;
+    margin: 0 0 0 35px !important;
+}
+
+.header .container{
+    width: 120% !important;
+}
+
+.inicio{
+    margin: 0 35px 0 35px !important;
+    background-image: url(../img/amanecer_obrero.png);
+    background-size: cover !important;
+    height: 50vh !important;
+}
+
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.6); /* Añadido fondo semi-transparente para cubrir la imagen */
+}
+
+.col-6 .logo{
+    float: left;
+}
+
+.col-6 .logo img{
+    height: 80px;
+}
+.col-6 .logo img:hover{
+    transform: scale(1.1);
+}
+
+.col-6 ul{
+    list-style: none;
+    justify-content: center !important;
+    text-align: end !important;
+}
+
+.col-6 ul li{
+    display: inline-block !important;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+.col-6 ul li:hover{
+    transform: scale(1.1);
+}
+
+.col-6 ul li a{
+    color: #0b132b;
+    text-align: center !important;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 12px 20px !important;
+    transition: .3 linear;
+    text-decoration: none;
+}
+
+.col-6 ul li a:hover{
+    transform: scale(1.1);
+}
+
+.col-12 img {
+    max-width: 98%;
+    display: block; /* Para evitar espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centrar la imagen dentro del contenedor */
+}
+
+.col-12 .text_overlay{
+    color: aliceblue;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    transform: translate(-50%, -50%); /* Centrar tanto vertical como horizontalmente */
+    text-align: left; /* Alineación izquierda para que el texto no se extienda más allá de la imagen */
+}
+
+.col-12 h1 {
+    font-size: 80px;
+    line-height: 70px;
+    width: 50%;
+}
+
+.col-12 h4 {
+    font-size: 16px;
+    font-weight: 40;
+    line-height: 24px;
+    width: 60%;
+}
+
+.col-12 .text_mas{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.col-12 .text_mas a {
+    text-decoration: none;
+    padding: 10px !important;
+    font-weight: lighter;
+    font-size: 16px;
+    background-color: aliceblue;
+    color: blue;
+    transition: all 0.4s ease-in-out;
+    border-radius: 8px;
+}
+
+.col-12 .text_mas a:hover {
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+}
+
+.container_form{
+    padding: 40px 0 40px 0 !important;
+    margin: 0 35px 0 35px !important;
+    color: white;
+}
+.container_form .row{
+    margin-inline-start: 3% !important;
+}
+.container_form span{
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    padding-bottom: 50px !important;
+}
+
+.container_form label{
+    margin: 0 0 17px !important;
+    padding: 0 20 0 0px !important;
+    font-family: 'Syne', sans-serif;
+}
+
+.container_form .col-2 input{
+    border: 2px solid white;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.container_form .checkbox{
+    display: inline-flex !important;
+    padding-top: 50px !important;
+    text-align: right !important;
+}
+
+.container_form .separador{
+    padding-right:15% !important;
+}
+
+.form-check-input{
+    border: 1px solid white !important;
+    background-color: transparent !important;
+}
+.checkbox .col-9 input{
+    background-color: blue;
+    color: white;
+    padding: 10px 50px !important;
+    margin-right: 24% !important;
+    border-radius: 13px ;
+}
+.checkbox .col-9 input:hover{
+    background-color: white;
+    color: blue;
+    transition: all 0.4s ease-in-out;
+}
+
+.titulo{
+    background-color: #fef2ae;
+    padding: 40px 0 40px 0 !important;
+    margin: 5px 35px !important;
+}
+
+.titulo span{
+    font-family: 'Syne', sans-serif !important;
+    font-size: 48px !important;
+    padding-left: 4% !important;
+}
+
+.info-half{
+    margin: 0 35px 0 35px !important;
+}
+
+.info-half #mision{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea el contenido desde la parte superior */
+    color: aliceblue;
+    background-color: rgb(8, 4, 81);
+    height: 70vh !important;
+    padding: 25% 5% 0 5% !important; /* Añade algún espacio entre el borde y el contenido */
+
+}
+
+.info-half span{
+    font-family: "Syne", sans-serif !important;
+    font-size: 24px;
+    margin: 20px 0 !important; /* Añade algún espacio entre los elementos */
+}
+
+.info-half p{
+    font-family: "Syne", sans-serif !important;
+    font-size: 18px;
+    margin: 20px 0; /* Añade algún espacio entre los elementos */
+}
+
+.info-half #vision{
+    background-image: url(../img/panel_obreros.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea el contenido desde la parte superior */
+    height: 70vh !important;
+    padding: 2% 5% 0 5% !important; /* Añade algún espacio entre el borde y el contenido */
+}
+
+.stats{
+    margin: 0 30px 0 30px !important;
+    font-family: "Syne", sans-serif !important;
+}
+
+.stats .col-4 {
+    height: 35vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(232,230,230);
+    width: 437px;
+    margin: 5px !important;
+}
+
+.stats .col-4 h1,h6 {
+    font-family: "Syne", sans-serif !important;
+}
+
+.stats .col-4 h1{
+    font-size: 68px;
+}
+
+.info{
+    background-image: url(../img/cielo.jpg);
+    background-size: cover !important;
+    height: 45vh !important;
+    margin: 5px 35px !important;
+}
+
+.info .col-12 p{
+    font-family: "Syne", sans-serif;
+    font-size: 18px;
+    width: 60%;
+    padding: 5% !important;
+}
+
+.media {
+    margin: 5px 35px !important;
+}
+
+.media .col-4,
+.media .col-8 {
+    margin-right: 5px; /* Añade un margen entre las columnas */
+}
+
+.media .col-4 img,
+.media .col-8 img {
+    height: 52vh !important;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de su contenedor */
+    object-fit: cover; /* Escala la imagen para que cubra todo el contenedor */
+}
+
+.contacto{
+    margin: 5px 35px !important;
+    background-color: #fef2ae;
+}
+
+.contacto hr{
+    border-width: 3px;
+    border-color: rgb(8, 4, 81) !important;
+    width: 90% !important;
+    margin: 0 5% !important;
+}
+
+.contacto .col-12 img{
+    height: 150px;
+    margin: 1% 5% !important;
+}
+
+.contacto .col-5{
+    padding-left: 5% !important;
+    padding-top: 3% !important;
+}
+
+.contacto .col-5 p{
+    width: 40%;
+    margin: 40px 0 !important;
+    font-family: "Syne", sans-serif;
+}
+
+.contacto .col-5 a{
+    color: black !important;
+    font-size: 34px !important;
+    margin: 0 5px !important;
+}
+
+.contacto .col-7{
+    width: 54%;
+}
+
+.contacto .col-7 h5{
+    margin: 80px 0 40px 0 !important;
+    font-family: "Syne", sans-serif;
+}
+
+.contacto .col-7 p{
+    font-family: "Syne", sans-serif;
+    width: 75%;
+}
+
+.contacto .col-7 .col label{
+    font-family: "Syne", sans-serif;
+    font-weight: bold;
+    padding: 5% 0 !important;
+}
+
+.contacto .col-7 .col input{
+    font-family: "Syne", sans-serif;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 0%;
+    padding-left: 8px !important;
+}
+
+.contacto .row #mensaje label{
+    font-family: "Syne", sans-serif;
+    font-weight: bold;
+    padding: 2% 0 !important;
+}
+
+.contacto .row #mensaje textarea{
+    font-family: "Syne", sans-serif;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 0%;
+    padding-left: 8px !important;
+    margin-bottom: 5% !important;
+}
+
+.contacto .row #boton input {
+    background-color: blue;
+    color: white;
+    padding: 10px 40px !important; /* Ajusta el valor según sea necesario */
+    border-radius: 13px;
+    margin-left: 83% !important;
+}
+
+.contacto .row #boton input:hover{
+    background-color: transparent;
+    color: blue;
+    border: 2px solid blue;
+}
+
+#footer {
+    padding-left: 5% !important;
+    padding-bottom: 1% !important;
+}
+
+#footer p {
+    font-family: "Syne", sans-serif;
+}
+
+#footer a {
+    color: black !important;
+}
+
